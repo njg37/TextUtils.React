@@ -6,7 +6,6 @@ import PropTypes from 'prop-types'
 export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
-       {/* <nav className="navbar navbar-expand-lg navbar-'dark' bg-'dark'"> */}
       <div className="container-fluid">
       <a className="navbar-brand" href='#'>{props.title}</a>
         {/* <Link className="navbar-brand" to='/'>{props.title}</Link> */}
@@ -41,7 +40,7 @@ export default function Navbar(props) {
 
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,
-  aboutText: PropTypes.string.isRequired
+ // aboutText: PropTypes.string.isRequired
 }
 Navbar.defaultProps = {
   title: 'set title here',
